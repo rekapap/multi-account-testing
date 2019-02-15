@@ -1,0 +1,11 @@
+{
+  "name": "multi-account-testing",
+  "version": "1.0.0",
+  "description": "multi-account-testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run"
+  },
+  "author": "Reka Pap",
+  "license": "ISC"
+}
