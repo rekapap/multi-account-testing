@@ -1,6 +1,7 @@
 # Test Scenarios
 
 Test Scenarios for Email part
+
 | Test Case | Description | Expected Result | Actual result | Pass/Fail |
 | --------- | ---------- | --------------- | ------------ |------------ |
 | #1 | Typing Invalid Email | Error message: This email address is not valid  | | | |
@@ -10,6 +11,7 @@ Test Scenarios for Email part
 
 
 Test Scenarios for selecting Account, after a valid email was accepted
+
 | Test Case | Description |  Expected Result | Actual result | Pass/Fail |
 | --------- | ---------- | --------------- | ------------ |------------ |
 | #1 | It shows only the accounts of the user, and shows all of the user's account |
@@ -20,6 +22,7 @@ Test Scenarios for selecting Account, after a valid email was accepted
 
 
 Test Scenarios for Login
+
 | Test Case | Description |  Expected Result | Actual result | Pass/Fail |
 | --------- | ---------- | --------------- | ------------ |------------ |
 | #1 | On arrival, the email field is prepopulated with the valid email|  it is| | |
