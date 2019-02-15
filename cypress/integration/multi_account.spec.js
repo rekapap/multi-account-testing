@@ -5,10 +5,6 @@ describe('Email Submit Form', () => {
 
   context('Email Submission', () => {
 
-    beforeEach(() => {
-      cy.server()
-    })
-
     it('Typing Invalid Email', () => {
       const typedInvalidEmail = "notemail"
 
@@ -21,7 +17,7 @@ describe('Email Submit Form', () => {
 
   context('Select account', () => {
 
-    it.only('After submitting an email address, selecting an account the user is redirected to the account login page with prepopulated email',  () => {
+    it('After submitting an email address, selecting an account the user is redirected to the account login page with prepopulated email',  () => {
       const typedValidEmail = "pooja@perkbox.co.uk"
       cy.get('#login__global-login__field-email')
         .type(typedValidEmail)
