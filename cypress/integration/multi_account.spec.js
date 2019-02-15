@@ -18,4 +18,17 @@ describe('Email Submit Form', () => {
       cy.get('#login__global-login__field-email__copy-error__icon-text').should('contain', 'This email address is not valid')
     })
   })
+
+  context('Select account', () => {
+
+    it.only('After submitting an email address, selecting an account the user is redirected to the account login page with prepopulated email',  () => {
+      const typedValidEmail = "pooja@perkbox.co.uk"
+      cy.get('#login__global-login__field-email')
+        .type(typedValidEmail)
+      cy.get('#login__global-login__btn-submit').click()
+      cy.get('#login__global-login__tenant-select__home__tenant').click()
+      cy.get('#login__global-login__tenant-select__btn-submit').click()
+      cy.get("#login__default-login__field-email").should('have.value', typedValidEmail)
+    })
+  })
 })
